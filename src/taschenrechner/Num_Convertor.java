@@ -129,7 +129,7 @@ public class Num_Convertor extends JFrame {
 		btnConvart.setBounds(397, 369, 117, 25);
 		contentPane.add(btnConvart);
 		
-		JButton btnClose = new JButton("Close");
+		JButton btnClose = new JButton("abbrechen");
 		btnClose.setBackground(new Color(255, 182, 193));
 		btnClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -139,19 +139,19 @@ public class Num_Convertor extends JFrame {
 		btnClose.setBounds(268, 369, 117, 25);
 		contentPane.add(btnClose);
 		
-		JLabel lblDec = new JLabel("Dez");
+		JLabel lblDec = new JLabel("Dezimal");
 		lblDec.setBounds(30, 61, 70, 15);
 		contentPane.add(lblDec);
 		
-		JLabel lblBin = new JLabel("Bin");
+		JLabel lblBin = new JLabel("Binär");
 		lblBin.setBounds(30, 137, 70, 15);
 		contentPane.add(lblBin);
 		
-		JLabel lblHex = new JLabel("Hex");
+		JLabel lblHex = new JLabel("Hexadezimal");
 		lblHex.setBounds(30, 213, 70, 15);
 		contentPane.add(lblHex);
 		
-		JLabel lblOct = new JLabel("Okt");
+		JLabel lblOct = new JLabel("Oktal");
 		lblOct.setBounds(30, 289, 70, 15);
 		contentPane.add(lblOct);
 	}

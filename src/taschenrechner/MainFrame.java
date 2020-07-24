@@ -428,31 +428,7 @@ public class MainFrame extends JFrame {
 		var_btn_mode.setFont(new Font("Dialog", Font.BOLD, 10));
 		var_btn_mode.setBounds(57, 400, 204, 30);
 		contentPane.add(var_btn_mode);
-			JButton var_btn_rnd = new JButton("RND");
-		var_btn_rnd.setToolTipText("zufälliger Wert 0<=");
-		var_btn_rnd.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				problem= problem+ "RND";
-				update_display();
-			}
-		});
-		var_btn_rnd.setBackground(new Color(255, 192, 203));
-		var_btn_rnd.setFont(new Font("Dialog", Font.BOLD, 10));
-		var_btn_rnd.setBounds(57, 291, 60, 30);
-		contentPane.add(var_btn_rnd);
-		
-		JButton var_btn_exp = new JButton("EXP");
-		var_btn_exp.setToolTipText("Exponentiell");
-		var_btn_exp.setBackground(new Color(255, 192, 203));
-		var_btn_exp.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				problem= problem+ "EXP";
-				update_display();
-			}
-		});
-		var_btn_exp.setFont(new Font("Dialog", Font.BOLD, 10));
-		var_btn_exp.setBounds(129, 291, 60, 30);
-		contentPane.add(var_btn_exp);
+			
 		
 		JButton var_btn_pi = new JButton("π");
 		var_btn_pi.setToolTipText("Die größte PI");
@@ -551,31 +527,6 @@ public class MainFrame extends JFrame {
 		var_btn_cube.setBounds(57, 164, 60, 30);
 		contentPane.add(var_btn_cube);
 		
-		JButton var_btn_npr = new JButton("nPr");
-		var_btn_npr.setToolTipText("Die Permutation");
-		var_btn_npr.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				problem= problem + "p";
-				update_display();
-			}
-		});
-		var_btn_npr.setFont(new Font("Dialog", Font.BOLD, 10));
-		var_btn_npr.setBackground(new Color(255, 222, 173));
-		var_btn_npr.setBounds(57, 333, 60, 30);
-		contentPane.add(var_btn_npr);
-		
-		JButton var_btn_ncr = new JButton("nCr");
-		var_btn_ncr.setToolTipText("Die Kombination");
-		var_btn_ncr.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				problem= problem +"c";
-				update_display();
-			}
-		});
-		var_btn_ncr.setFont(new Font("Dialog", Font.BOLD, 10));
-		var_btn_ncr.setBackground(new Color(255, 222, 173));
-		var_btn_ncr.setBounds(129, 333, 60, 30);
-		contentPane.add(var_btn_ncr);
 		
 		
 		
@@ -675,7 +626,7 @@ public class MainFrame extends JFrame {
 		});
 		var_btn_fact.setFont(new Font("Dialog", Font.BOLD, 12));
 		var_btn_fact.setBackground(new Color(255, 222, 173));
-		var_btn_fact.setBounds(201, 333, 60, 30);
+		var_btn_fact.setBounds(57, 291, 60, 30);
 		contentPane.add(var_btn_fact);
 		
 		JButton var_btn_inv = new JButton("⅟x");
@@ -700,7 +651,7 @@ public class MainFrame extends JFrame {
 					num_conv = new Num_Convertor();
 					num_conv.setVisible(true);
 					num_conv.setResizable(false);
-					num_conv.setTitle("❤❤❤ Der Zahlabhängige Konvertor...  ❤❤❤");
+					num_conv.setTitle("*** Der Zahlabhängige Konvertor...  ***");
 					num_conv.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 				} catch (Exception ex) {
 					ex.printStackTrace();
