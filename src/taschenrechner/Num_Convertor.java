@@ -97,7 +97,8 @@ public class Num_Convertor extends JFrame {
 		contentPane.add(var_tf_oct);
 		
 		JButton btnConvart = new JButton("Konvert");
-		btnConvart.setBackground(new Color(102, 205, 170));
+		btnConvart.setForeground(Color.WHITE);
+		btnConvart.setBackground(Color.BLACK);
 		btnConvart.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String tf_dec= var_tf_dec.getText();
@@ -130,7 +131,8 @@ public class Num_Convertor extends JFrame {
 		contentPane.add(btnConvart);
 		
 		JButton btnClose = new JButton("abbrechen");
-		btnClose.setBackground(new Color(255, 182, 193));
+		btnClose.setForeground(Color.WHITE);
+		btnClose.setBackground(Color.BLACK);
 		btnClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				this_obj.dispose();
