@@ -277,7 +277,12 @@ public class MainFrame extends JFrame {
 				set_history(problem);
 				expr.set(format_problem());
 				ans= expr.evaluate();
+				if(Double.parseDouble(ans)==-1){
+                                    var_res_display.setText("Error");
+                                }
+                                else{
 				var_res_display.setText(ans);
+                                }
 				problem= "";
 				current_h_pos= 0;
 			}
