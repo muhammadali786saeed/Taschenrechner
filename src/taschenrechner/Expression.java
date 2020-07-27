@@ -79,7 +79,20 @@ public class Expression {
 					}
 				}
 		}
-
+                  
+		// to check ((1+1)2)
+                for(int i=1; i<expr.length(); i++) {
+			 
+                    if(expr.charAt(i) == ')') {
+                          if(i<expr.length()-1){   
+                             if(is_a_number(expr.charAt(i+1))) {
+                                        return -1;
+				}
+                          }
+                    
+                        }
+                         }
+                
 		if(expr.length()==0) {
 			return 0.0;
 		}
